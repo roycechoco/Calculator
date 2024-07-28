@@ -1,0 +1,53 @@
+* {
+    font-family: sans-serif;
+}
+
+.container {
+    border: 2px solid lightskyblue; 
+    height: 50vw;
+    width: 100vw;
+}
+
+.banner {
+display: flex;
+justify-content: center;
+color:darkslategrey;
+}
+
+
+.button-container {
+box-sizing: border-box;
+display:flex; 
+flex-wrap: wrap;
+margin:10px;
+
+
+
+
+
+
+}
+
+
+.numpad {
+display: flex;
+justify-content: center;
+padding:px;
+border: 3px solid black;  
+font-size: 50px;  
+border-radius: 50%;
+width:calc(100%/3);
+height:calc(100%/3);
+
+
+
+}
+
+
+.display {
+    border: 5px solid black; 
+    width:50px;
+    height:50px;
+  margin:auto;
+  width:50%;
+}
