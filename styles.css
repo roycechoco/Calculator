@@ -1,27 +1,29 @@
 * {
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 .centering-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height:100vh;
+    
 }
 .main-body {
     background-color: gray;
-    height:50vh;
-    width:50vh;
+    min-height:70vh;
+    min-width:50vw;
     border: 5px solid black;
     border-radius: 50px;
     margin:0;
    
 }
-
+ 
 .screen {
     background-color: whitesmoke;
-    height:10vh;
-    width: 60vw;
-    margin: 1rem auto;
+    min-height:10vh;
+    min-width: 20vw;
+    margin: 1rem;
     border-radius: 30px;
     display: flex;
     
@@ -32,21 +34,22 @@
     background-color: lightsalmon;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    height: 80%;
-    width: 15%;
-    margin-left: 10px;
+    min-height: 85%;
+    min-width: 15%;
+    margin:10px 0 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 400;
     font-size: 2rem;
     border: 5px solid salmon;
+
 }
 
 
 .screen-numbers {
     height:80%;
-    width:78%;
+    width:80%;
     background-color: lightblue;
     border-top:5px solid gray;
     border-bottom:5px solid gray;
@@ -57,20 +60,22 @@
     display:flex;
     justify-content: end;
     align-items: center;
+    
 
 }
 
 .number-container {
-    height:30vh;
-    width: 40vw;
+    min-height:20vh;
+    min-width: 30vw;
     background-color: whitesmoke;
     margin-top:1rem;
-    margin-left:3.2rem;
     padding:10px;
     border-radius: 20px;
     display:flex;
-    gap:10px;
-    justify-content: center;
+
+    justify-content: space-evenly;
+
+    
 }
 
 .number {
@@ -80,6 +85,7 @@
     border: 3px solid gray;
     border-radius: 50px;
     font-size:2rem;
+    position: relative;
 
 }
 
@@ -91,6 +97,7 @@
     display:flex;
     flex-direction: column;
     gap:10px;
+  
 
 }
 
@@ -98,6 +105,7 @@
     display:flex;
     flex-direction: column;
     gap:10px;
+
 }
 
 .third-row {
@@ -105,26 +113,30 @@
     flex-direction: column;
     gap:10px;
  
+ 
 }
 
 .bottom {
     display:flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .operator-container {
-    height: 30vh;
-    width: 14vw;
+    min-height: 30vh;
+    min-width: 14vw;
     background-color: whitesmoke;
     display:flex;
     margin-top:1rem;
-    margin-left:1rem;
+    
     flex-direction: column;
     justify-content: center;
     align-items:center;
     gap:10px;
     border-radius:20px;
     padding:10px;
-
+ 
 }
 
 .operator {
@@ -137,7 +149,7 @@
 }
 
 .calc-number {
-    font-size:3rem;
+    font-size:2rem;
     padding-right:1rem;
     
   
