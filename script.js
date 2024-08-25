@@ -3,63 +3,81 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 
-
-
-/*(const btn1 = document.getElementById("1");
-const btn2 = document.getElementById("2");
-const btn3 = document.getElementById("3");
-const btn4 = document.getElementById("4");
-const btn5 = document.getElementById("5");
-const btn6 = document.getElementById("6");
-const btn7 = document.getElementById("7");
-const btn8 = document.getElementById("8");
-const btn9 = document.getElementById("9");
-const btn0 = document.getElementById("0");
-*/
-
-const btnPlus = document.getElementById("plus");
-const btnMinus = document.getElementById("minus");
-const btnTimes = document.getElementById("times");
-const btnDivide = document.getElementById("divide");
-
+// Screen display numbers when clicked 
 const screenDisplay = document.getElementById("screen-numbers");
+const btns = document.querySelectorAll('.bottom button');
 
-const numBtns = document.querySelectorAll('.number-container button');
-numBtns.forEach(button => {
+btns.forEach(button => {
     button.addEventListener('click', function() {
         const letter = this.getAttribute('data-letter');
         const newLetter = document.createElement('span');
         newLetter.textContent = letter;
         newLetter.classList.add('calc-number');
         screenDisplay.appendChild(newLetter);
+        console.log('Button clicked:', this);
+        console.log('Data letter:', letter);
+        console.log('New span element:', newLetter);
 })
 })
 
+// calculator logic
+/*
+// Declaring variable for storing
+let currentInput = '';
+let operator = '';
+let firstOperand = '';
+let secondOperand = '';
+*/
+
+
+
+
+/*allBtns.forEach(button => {
+    button.addEventListener( 'click' , function() {
+      if (letter=="=")
+        {
+            secondOperand=currentInput;
+            if (firstOperand&&operator&&secondOperand)
+                {
+                  const result=  evaluate(firstOperand,operator,secondOperand);
+                  screenDisplay.innerHTML = '';
+                  screenDisplay.innerHTML = result;
+                }
+        }  
+        
+
+
+
+
+
+
+})
+});
+*/
+
+// Function for evaluating 
+
+function evaluate(a,op,b) {
+ a=parseFloat(a);
+ b=parseFloat(b);
+ switch (op) {
+    case '+': return a+b;
+    case '-': return a-b;
+    case '*': return a*b;
+    case '/': return a/b;
+ }
+};
+
+
+// clear btn
 const ceBtn = document.getElementById("ce");
 ceBtn.addEventListener("click", function(){
     screenDisplay.innerHTML = '';
+    currentInput='';
+    operator='';
+    firstOperand='';
+    secondOperand='';
 });
-
-
-function add(a,b)
-{
-    return a+b;
-}
-
-function subtract(a,b)
-{
-    return a-b;
-}
-
-function multiply(a,b)
-{
-    return a*b;
-}
-
-function divide(a,b)
-{
-    return a/b;
-}
 
 
 
