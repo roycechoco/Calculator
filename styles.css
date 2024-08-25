@@ -30,13 +30,13 @@
     align-items: center;
 }
 
-.ce {
+#ce {
     background-color: lightsalmon;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    min-height: 85%;
-    min-width: 15%;
-    margin:10px 0 10px 10px;
+    height: 8vh;
+    width: 8vw;
+    margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,9 +46,8 @@
 
 }
 
-
-.screen-numbers {
-    height:80%;
+#screen-numbers {
+    height:8vh;
     width:80%;
     background-color: lightblue;
     border-top:5px solid gray;
@@ -56,12 +55,23 @@
     border-right:5px solid gray;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-right:10px;
 
     display:flex;
     justify-content: end;
     align-items: center;
     
 
+}
+
+.calc-number {
+    
+
+    
+    font-size:2rem;
+    padding:0;
+    
+  
 }
 
 .number-container {
@@ -148,9 +158,3 @@
     font-size:2rem;
 }
 
-.calc-number {
-    font-size:2rem;
-    padding-right:1rem;
-    
-  
-}
